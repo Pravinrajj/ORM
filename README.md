@@ -13,13 +13,14 @@ To develop a Django application to store and retrieve data from a database using
 Clone the problem from github
 
 ### STEP 2:
-create a new app
+Create a new app
 
 ### STEP 3:
 Enter the code for admin.py and model.py
 
 ### STEP 4:
 Execute Django admin and create 10 employees
+
 ## PROGRAM
 ```
 Model.py
@@ -32,7 +33,6 @@ class Employee (models.Model):
     salary=models.IntegerField()
     age=models.IntegerField()
     email=models.EmailField()
-
 class EmployeeAdmin(admin.ModelAdmin):
     list_display=('eid','name','salary','age','email')
 
@@ -44,7 +44,6 @@ admin.site.register(Employee,EmployeeAdmin)
 ```
 
 ## OUTPUT
-
 ![OUTPUT](./Out.png)
 
 ## RESULT
